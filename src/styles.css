@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.pokemon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pokemon-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  width: calc(25% - 20px); /* 4 cards per row */
+  box-sizing: border-box;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon-card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.pokemon-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
